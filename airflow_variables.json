@@ -1,0 +1,27 @@
+{
+  "INPUT_FILE": {
+    "value": "/opt/airflow/data/input/sample.txt",
+    "description": "Chemin du fichier à traiter (dans le conteneur Airflow)"
+  },
+  "CHUNK_SIZE": {
+    "value": "100",
+    "description": "Taille des chunks en bytes"
+  },
+  "REDUNDANCY": {
+    "value": "3",
+    "description": "Nombre de réplicats par séquence"
+  },
+  "ERROR_CORRECTION": {
+    "value": "10",
+    "description": "Nombre de symboles de parité Reed-Solomon"
+  },
+  "SEGMENT_NT": {
+    "value": "120",
+    "description": "Longueur d'un segment en nucléotides"
+  },
+  "RESEED_ATTEMPTS": {
+    "value": "4",
+    "description": "Nombre d'essais de re-seed pour satisfaire les contraintes GC/run"
+  }
+}
+
